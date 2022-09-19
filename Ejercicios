@@ -1,0 +1,438 @@
+//Ejercicio 01: Realizar un programa que permita mostrar en pantalla el mensaje “UNIVERSIDAD 
+PERUANA LOS ANDES”
+package ciclo_04;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class ejercicio_01 {
+
+    public static void main(String[] args) {
+        System.out.println("UNIVERSIDAD PERUANA LOS ANDES");
+    }
+}
+
+
+//Ejercicio 02: Realizar un programa que permita mostrar en pantalla tu nombre y apellido 
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class ejercicio_2 {
+    public static void main(String[] args){
+        Scanner fg = new Scanner (System.in);
+        
+        String nom= "Josthen Arian";
+        String ape= "Gabriel Chauca";
+
+        
+        System.out.println("El estudiante se llama: "+nom+" "+ape);
+    }
+}
+
+
+//Ejercicio 03: Realizar un programa que permita calcular la suma de 5 números 
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class Suma {
+    public static void main(String[] args){
+        Scanner digitar = new Scanner (System.in);
+        int suma=0;
+        
+        for (int i=0; i<5; i++){
+            System.out.println("Introduce el numero:");
+            int n = digitar.nextInt();
+            suma = suma + n;
+        }
+        System.out.println("La suma es:" +suma);
+    } 
+}
+
+
+//Ejercicio 04
+*
+//Triangulo
+package ciclo_04;
+  import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class AyP_Triang {
+    public static void main(String[] args){
+        Scanner tri = new Scanner (System.in);
+        int b=0, h=0;
+        int l=0, m=0, n=0;
+        int P=0, A=0;
+        
+        System.out.println("AREA DEL TRIANGULO");
+        System.out.println("Ingrese el valor de la base:");
+        b=tri.nextInt();
+        System.out.println("Ingrese el valor de la altura:");
+        h=tri.nextInt();
+        A=(b*h)/2;
+        System.out.println("El Area es: "+A);
+        System.out.println("================================");
+        System.out.println("PERIMETRO DEL TRIANGULO");
+        System.out.println("Ingrese el valor del lado 1");
+        l=tri.nextInt();
+        System.out.println("Ingrese el valor del lado 2");
+        m=tri.nextInt();
+        System.out.println("Ingrese el valor del lado 3");
+        n=tri.nextInt();
+        P=l+m+n;
+        System.out.println("El Perimetro es: "+P);
+    }
+}
+
+//Cuadrado
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class AyP_Cuadrado {
+    public static void main(String[] args){
+        Scanner cdr = new Scanner (System.in);   
+        int l=0;
+        int P=0, A=0;
+        
+        System.out.println("AREA Y PERIMETRO DEL CUADRADO");
+        System.out.println("Ingrese el lado:");
+        l=cdr.nextInt();
+        
+        A=l*l;
+        P=4*l;
+        
+        System.out.println("El Area es: "+A);
+        System.out.println("El Perimetro es: "+P);
+    }
+}
+
+//Rectángulo
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class AyP_Rectangulo {
+    public static void main(String[] args){
+        Scanner rtn = new Scanner (System.in);      
+        int b=0, h=0;
+        int P=0, A=0;
+        
+        System.out.println("AREA Y PERIMETRO DEL RECTANGULO");
+        System.out.println("Ingrese la base:");
+        b=rtn.nextInt();
+        System.out.println("Ingrese la altura:");
+        h=rtn.nextInt();
+        A=b*h;
+        P=(2*b)+(2*h);
+        System.out.println("El Area es: "+A);
+        System.out.println("El Perimetro es: "+P);
+    }
+}
+
+//Rombo
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class AyP_Rombo {
+    public static void main(String[] args){
+        Scanner rob = new Scanner (System.in);        
+        int dx=0, dy=0, l=0;
+        int P=0, A=0;
+        
+        System.out.println("AREA DEL ROMBO");
+        System.out.println("Ingrese la diagonal mayor:");
+        dx=rob.nextInt();
+        System.out.println("Ingrese la diagonal menor:");
+        dy=rob.nextInt();
+        A=(dx*dy)/2;
+        System.out.println("El Area es: "+A);
+        System.out.println("================================");
+        System.out.println("PERIMETRO DEL ROMBO");
+        System.out.println("Ingrese el valor del lado:");
+        l=rob.nextInt();
+        P=4*l;
+        System.out.println("El Perimetro es: "+P);
+    }
+}
+
+//Romboide
+package ciclo_04;
+import java.util.Scanner;
+/**
+ * @author JOSTHEN GABRIEL
+ */
+public class AyP_Romboide {
+    public static void main(String[] args){
+        Scanner rtn = new Scanner (System.in);       
+          
+        System.out.println("AREA Y PERIMETRO DEL ROMBOIDE");
+        System.out.println("Ingrese la base:");
+        double b=rtn.nextDouble();
+        System.out.println("Ingrese la altura:");
+        double h=rtn.nextDouble();
+        double A=b*h;
+        double P=(2*b)+(2*h);        
+        System.out.println("El Area es: "+A);
+        System.out.println("El Perimetro es: "+P);
+    }
+}
+
+//Trapecio
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class AyP_Trapecio {
+    public static void main(String[] args){
+        Scanner tri = new Scanner (System.in);        
+        int B, b, h;
+        int l, m, n, o;
+        int P, A;
+        
+        System.out.println("AREA DEL TRAPECIO");
+        System.out.println("Ingrese el valor de la base mayor:");
+        B=tri.nextInt();
+        System.out.println("Ingrese el valor de la base menor:");
+        b=tri.nextInt();
+        System.out.println("Ingrese el valor de la altura:");
+        h=tri.nextInt();
+        A=(h*(B+b))/2;
+        System.out.println("El Area es: "+A);
+        System.out.println("================================");
+        System.out.println("PERIMETRO DEL TRAPECIO");
+        System.out.println("Ingrese el valor del lado 1");
+        l=tri.nextInt();
+        System.out.println("Ingrese el valor del lado 2");
+        m=tri.nextInt();
+        System.out.println("Ingrese el valor del lado 3");
+        n=tri.nextInt();
+        System.out.println("Ingrese el valor del lado 4");
+        o=tri.nextInt();
+        P=l+m+n+o;
+        System.out.println("El Perimetro es: "+P);
+    }
+}
+
+
+//Ejercicio 05: Realizar un programa que calcule el promedio de 5 notas ingresadas por teclado. 
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class Promedio_notas {
+    public static void main(String[] args){
+        Scanner nota = new Scanner (System.in);       
+        double a,b,c,d,e;
+	double prom;
+	System.out.println("Ingrese las 5 calificaciones");
+	a = Double.parseDouble(nota.nextLine());
+	b = Double.parseDouble(nota.nextLine());
+	c = Double.parseDouble(nota.nextLine());
+	d = Double.parseDouble(nota.nextLine());
+	e = Double.parseDouble(nota.nextLine());
+	prom = (a+b+c+d+e)/5;
+	System.out.println("El promedio de las 5 calificaciones es: "+prom);
+	if ((prom>=10)) {
+            System.out.println("El alumno aprobo el curso");
+	} else {
+            System.out.println("El alumno no aprobo el curso");
+	}
+    }
+}
+
+
+//Ejercicio 06: Realizar un programa que calcule la multiplicación de 5 números ingresados por teclado. 
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class Multiplicación {
+    public static void main(String[] args){
+        Scanner por = new Scanner (System.in);
+        int a,b,c,d,e;
+	int multi;
+	System.out.println("Ingrese las 5 numeros");
+	a = (int) Double.parseDouble(por.nextLine());
+	b = (int) Double.parseDouble(por.nextLine());
+	c = (int) Double.parseDouble(por.nextLine());
+	d = (int) Double.parseDouble(por.nextLine());
+	e = (int) Double.parseDouble(por.nextLine());
+	multi = (int) (a*b*c*d*e);
+        
+	System.out.println("La multiplicacion de los 5 numeros es: "+multi);
+    } 
+}
+//Ejercicio 07
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class ejercicio_7 {
+    public static void main(String[] args){
+        Scanner prom = new Scanner (System.in);        
+        int suma1=0;
+        int suma2=0;
+        
+        for (int i=1; i<=5; i++){
+            System.out.println("Introduce el numero:");
+            int n = prom.nextInt();
+            suma1 = suma1 + n;
+        }
+        for (int i=6; i<=10; i++){
+            System.out.println("Introduce el numero:");
+            int n = prom.nextInt();
+            suma2 = suma2 + n;
+        }
+        int total = suma1*suma2;
+        System.out.println("La suma de los 5 primeros numeros es: "+suma1);
+        System.out.println("La suma de los 5 ultimos numeros es: "+suma2);        
+        System.out.println("La multiplicacion de las sumas es:" +total);
+    }   
+}
+
+
+//Ejercicio 08: Calcular el área de un circulo sabiendo que pi = 3,14159265 A= pi x r2, sabiendo que r=5. 
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class Ejercicio_8 {
+    public static void main(String[] args){
+        Scanner cir = new Scanner (System.in);
+        
+        double pi=3.14159265;
+        int r=5;
+        
+        System.out.println("AREA DEL CIRCULO");
+        double A= pi*(r*r);
+        System.out.println("El area del circulo es: "+A);
+    }
+}
+
+
+//Ejercicio 09: Calcular la suma de las áreas de 3 círculos cuyos radios son 8.9, 6.7 y 7.9 
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class ejercicio_09 {
+    public static void main(String[] args){
+        Scanner cir = new Scanner (System.in);
+        
+        double pi=3.14159265;
+        double r=8.9, r2=6.7, r3=7.9;
+        
+        System.out.println("AREA 1");
+        double A1= pi*(r*r);
+        System.out.println("El area 1 es: "+A1);
+        System.out.println("================================");
+        System.out.println("AREA 2");
+        double A2= pi*(r2*r2);
+        System.out.println("El area 2 es: "+A2);
+        System.out.println("================================");
+        System.out.println("AREA 3");
+        double A3= pi*(r3*r3);
+        System.out.println("El area 3 es: "+A3);
+        System.out.println("================================");
+        double suma = A1+A2+A3;
+        System.out.println("La suma de las Areas es: "+suma);
+    }
+}
+
+
+//Ejercicio 10: Calcular la suma de las áreas de 8 círculos cuyos radios son 18.9, 16.7, 71.9, 4.6, 6.7, 5.6. 
+4.7y 10.
+package ciclo_04;
+import java.util.Scanner;
+/**
+ * @author JOSTHEN GABRIEL
+ */
+public class ejercicio_10 {
+    public static void main(String[] args){
+        Scanner cir = new Scanner (System.in);       
+        double pi=3.14159265;
+        double r=18.9, r2=16.7, r3=71.9, r4=4.6, r5=6.7;
+        double r6=5.6, r7=4.7, r8=10;
+        
+        System.out.println("AREA 1");
+        double A1= pi*(r*r);
+        System.out.println("El area 1 es: "+A1);
+        System.out.println("================================");
+        System.out.println("AREA 2");
+        double A2= pi*(r2*r2);
+        System.out.println("El area 2 es: "+A2);
+        System.out.println("================================");
+        System.out.println("AREA 3");
+        double A3= pi*(r3*r3);
+        System.out.println("El area 3 es: "+A3);
+        System.out.println("================================");
+        System.out.println("AREA 4");
+        double A4= pi*(r4*r4);
+        System.out.println("El area 4 es: "+A4);
+        System.out.println("================================");
+        System.out.println("AREA 5");
+        double A5= pi*(r5*r5);
+        System.out.println("El area 5 es: "+A5);
+        System.out.println("================================");
+        System.out.println("AREA 6");
+        double A6= pi*(r6*r6);
+        System.out.println("El area 6 es: "+A6);
+        System.out.println("================================");
+        System.out.println("AREA 7");
+        double A7= pi*(r7*r7);
+        System.out.println("El area 7 es: "+A7);
+        System.out.println("================================");
+        System.out.println("AREA 8");
+        double A8= pi*(r8*r8);
+        System.out.println("El area 8 es: "+A8);
+        System.out.println("================================");
+        double suma = A1+A2+A3+A4+A5+A6+A7+A8;
+        System.out.println("La suma de las Areas es: "+suma);
+    }
+}
+
+//Ejercicio 11: Programa que solicita ingresar un número favorito por teclado y luego el computador debe 
+mostrar el mensaje “Tu numero favorito es <numero ingresado>”.
+package ciclo_04;
+import java.util.Scanner;
+/**
+ *
+ * @author JOSTHEN GABRIEL
+ */
+public class ejercicio_11 {
+    public static void main(String[] args){
+        Scanner num = new Scanner (System.in);
+  
+        System.out.println("Ingrese el numero:");
+        int fav = num.nextInt();
+        
+        System.out.println("El numero favorito es: "+fav);
+    }
+}
